@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" href="./index.css">
+    <!-- <script src="./index.js"> </script> -->
+    <title>Hello World!</title>
+    <style>
+        body {
+            text-align: center;
+            padding: 1rem;
+        }
+
+        p {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello World!</h1>
+    <!-- We are using Node.js <span id="node-version"></span>,
+    Chromium <span id="chrome-version"></span>,
+    and Electron <span id="electron-version"></span>. -->
+    <p id="response"> </p>
+    <script src="./index.js"> </script>
+    <table id="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Repo Name</th>
+                <th>Repo Url</th>
+                <th>Private</th>
+            </tr>
+        </thead>
+
+    </table>
+    <p id="response"> </p>
+
+</body>
+
+</html>
