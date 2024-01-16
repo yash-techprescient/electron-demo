@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./loading.css">
     <!-- <script src="./index.js"> </script> -->
     <title>Github Python Repos</title>
     <style>
@@ -21,20 +21,13 @@
 </head>
 
 <body>
-    <h1>Most Popular Python Github Repos (Latest)</h1>
-    <script src="./index.js"> </script>
-    <table id="table">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Repo Name</th>
-                <th>Repo Url</th>
-                <th>Private</th>
-            </tr>
-        </thead>
+    <div class="center-contain">
+        <div class="align-center">
+            <i class="loading"></i>
+            <div>Fetching data from github...</div>
+        </div>
 
-    </table>
-    <p id="response"> </p>
+    </div>
 
 </body>
 
